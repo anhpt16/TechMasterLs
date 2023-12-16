@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            border: 0.5px solid;
+        }
+        th {
+            border: 0.5px solid;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <table style="border: 0.5px solid;">
+            <thead>
+                <tr>
+                    <th colspan="2">Đăng ký</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="title" style="width: 100px;"><label for="">Full name</label></td>
+                    <td><input type="text" placeholder="Nhập fullname"></td>
+                </tr>
+                <tr>
+                    <td ><label for="">Username</label></td>
+                    <td><input type="text" placeholder="Nhập tên"></td>
+                </tr>
+                <tr>
+                    <td ><label for="">Password</label></td>
+                    <td><input type="text" placeholder="Nhập mật khẩu"></td>
+                </tr>
+                <tr>
+                    <td ><label for="">Nhập lại Password</label></td>
+                    <td><input type="text" placeholder="Nhập lại mật khẩu"></td>
+                </tr>
+                <tr>
+                    <td ><label for="">Giới tính</label></td>
+                    <td>
+                        <input type="radio" name="name">
+                            <label for="">Nam</label>
+                        <input type="radio" name="name">
+                            <label for="">Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td ><label for="">Ngày sinh</label></td>
+                    <td>
+                        <select name="" id="">
+                            <option value="">Ngày 1</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">Tháng 1</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">Năm 2020</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td ><label for="">Địa chỉ</label></td>
+                    <td><textarea rows="3" cols="20" placeholder="Nhập địa chỉ...."></textarea></td>
+                </tr>
+                <tr>
+                    <td ><label for="">Avatar</label></td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td ><label for="">Sở thích</label></td>
+                    <td>
+                        <input type="checkbox"><label>Xem phim</label>
+                        <input type="checkbox"><label>Thể thao</label>
+                        <input type="checkbox"><label>Web</label>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="2" class="title">
+                        <button type="submit">Reset</button>
+                        <button type="submit">OK</button>
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+</html>
