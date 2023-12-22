@@ -220,3 +220,47 @@ body {
         width: calc((100%) - 20px);       
     }
 }
+
+/* Detail */
+
+.detail {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+
+}
+.btn {
+    padding: 8px;
+    background-color: green;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+.main {
+    margin-top: 20px;
+    background-color: white;
+}
+.main_top  {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 20px;
+}
+.main_body {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-bottom: 40px;
+}
+.main_body p {
+    line-height: 25px;
+}
+.main_body ul li {
+    margin-left: 30px;
+}
+.main_body p a {
+    text-decoration: none;
+    color: blue;
+}
+.main_body ul li a {
+    text-decoration: none;
+    color: blue;
+}
