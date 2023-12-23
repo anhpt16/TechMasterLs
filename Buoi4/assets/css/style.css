@@ -227,7 +227,7 @@ body {
     max-width: 1200px;
     margin: auto;
     margin-top: 20px;
-
+    min-height: 800px;
 }
 .btn {
     padding: 8px;
