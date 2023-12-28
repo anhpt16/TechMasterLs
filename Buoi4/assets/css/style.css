@@ -85,13 +85,12 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+    display: flex;
+    flex-direction: row;
     gap: 20px;
-    position: relative;
 }
 .sidebar {
     width: 200px;
-    position: fixed;
-    z-index: 0;
     /* border: 0.5px solid; */
     /* width: 15%; */
     /* width: 100%; */
@@ -102,6 +101,9 @@ body {
     list-style: none;
     padding-top: 10px;
     padding-bottom: 10px;
+    /* border: 0.5px solid; */
+    position: sticky;
+    top: 20px;
 }
 .sidebar_item {
     margin-top: 20px;
@@ -112,7 +114,6 @@ body {
     cursor: pointer;
 }
 .course {
-    margin-left: 220px;
     width: 80%;
     /* border: 0.5px solid; */
     flex-direction: column;

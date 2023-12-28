@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    width: 100px;
+    height: 40px;
+    background-color: green;
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    position: relative;
+}
+
+.sub_menu{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+
+}
