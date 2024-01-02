@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    background-color: #EFF0F5;
+}
+.parent{
+    height: 344px;
+}
+
+.parent-1{
+    margin-top: 40px;
+    margin-left: 20px;
+    background-color: white;
+    width: 200px;
+    list-style: none;
+    box-shadow: 1px 1px 1px rgb(204, 204, 204);
+    border: 0.5px solid #DADED0;
+    position: relative;
+    z-index: 10;
+}
+.parent-1 li:first-child{
+    margin-top: 10px;
+}
+.parent-1 li:last-child{
+    margin-bottom: 10px;
+}
+.parent-1 li {
+    padding: 5px 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+li::after {
+    content:'\f105';
+    font-family: "Font Awesome 6 free"; 
+    font-weight: 900;
+    display: none;
+}
+.parent-1 .child:hover{
+    background-color: #EFF0F5;
+    color: #F3730B;
+}
+li:hover::after{
+    display: block;
+}
+.parent-2 {
+    background-color: white;
+    color: black;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 198px;
+    display: none;
+    box-shadow: 1px 1px 1px #DADED0;
+    border: 0.5px solid #DADED0;
+    z-index: 20;
+}
+.parent-2 li:hover{
+    background-color: #EFF0F5;
+    color: #F3730B;
+}
+.child-1:hover .parent-2{
+    display: block;
+}
+.parent-3 {
+    background-color: white;
+    color: black;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 198px;
+    display: none;
+    box-shadow: 1px 1px 1px #DADED0;
+    border: 0.5px solid #DADED0;
+    z-index: 30;
+}
+.parent-3 li::after {
+    content: '';
+}
+.subchild-3:hover .parent-3{
+    display: block;
+}
+
