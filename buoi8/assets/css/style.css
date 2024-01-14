@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Animation */
+
+/* Xây dựng layout animation */
+.loading {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 5px solid black;
+    margin-top: 100px;
+    margin: auto;
+    position: relative;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    /* Sử dụng animation 
+        animation: name_animation duration animation_style animation_timing_function
+    */
+    animation: spinner 1s infinite linear;
+}
+.message {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+}
+/* Khai báo animation 
+    from ... to ...
+*/
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+        border-top: 3px solid green;
+        border-bottom: 3px solid green;      
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* Heart Icon */
+i {
+    margin-top: 100px;
+    margin-left: 100px;
+    font-size: 100px;
+    animation: heart 1s infinite linear;
+    margin-bottom: 200px;
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(0%);
+    }
+    50% {
+        transform: scale(100%);
+    }
+    100% {
+        transform: scale(0%);
+    }
+}
+/* Heart CSS */
+.wrap-heart {
+    margin: auto;
+    width: 100px;
+    position: relative;
+    animation: heart-css 1s infinite linear;
+}
+.wrap-heart div:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    transform: rotate(45deg);
+    border-radius: 50% 0 0 50%;
+    
+}
+.wrap-heart div:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    transform: rotate(45deg);
+    border-radius: 50% 50% 0 0;
+    
+}
+.wrap-heart div:last-child {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    top: 20px;
+    left: 20px;
+    transform: rotate(45deg);
+    border-radius: 0 0 10% 0;
+    
+}
+@keyframes heart-css {
+    0% {
+        transform: scale(0%);
+    }
+    50% {
+        transform: scale(100%);
+    }
+    100% {
+        transform: scale(0%);
+    }
+}
